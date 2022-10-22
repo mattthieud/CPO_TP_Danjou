@@ -21,27 +21,38 @@ public class TP2_Bieres_Danjou {
         uneBiere.degreAlcool = 7.0;
         uneBiere.brasserie = "Dubuisson";
        */
-        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des Trolls", 7.0, "Dubuisson");
-
-        uneBiere.lireEtiquette();
-        
-        
-        /*BouteilleBiere uneautreBiere = new BouteilleBiere();
-        
-        uneautreBiere.nom = "Leffe";
-        uneautreBiere.degreAlcool = 6.6;
-        uneautreBiere.brasserie = "Abbaye de Leffe";
-        */
-        BouteilleBiere uneautreBiere = new BouteilleBiere("Leffe", 6.6, "Abbaye de Leffe");
-        BouteilleBiere uneBiere3 = new BouteilleBiere( "Heineken", 5.0, "Cuvée Heineken");
-        BouteilleBiere uneBiere4 = new BouteilleBiere("Chouffe", 8.0, "Chouffe");
-        BouteilleBiere uneBiere5 = new BouteilleBiere("Cap dona", 7.0, "Cap Dona");
+       
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des Trolls", 7.0, "Dubuisson"); 
         System.out.println(uneBiere) ;
         boolean test;
         test=uneBiere.Décapsuler();
         System.out.println(uneBiere) ;
-
+        uneBiere.lireEtiquette();
+        
+        BouteilleBiere uneautreBiere = new BouteilleBiere("Leffe", 6.6, "Abbaye de Leffe");
+        test=uneautreBiere.Décapsuler();
+        System.out.println(uneautreBiere) ;
+        uneautreBiere.lireEtiquette();
+        
+        BouteilleBiere uneBiere3 = new BouteilleBiere( "Heineken", 5.0, "Cuvée Heineken");
+        test=uneBiere3.Décapsuler();
+        System.out.println(uneBiere3) ;
+        uneBiere3.lireEtiquette();
+        
+        BouteilleBiere uneBiere4 = new BouteilleBiere("Chouffe", 8.0, "Chouffe");
+        test=uneBiere4.Décapsuler();
+        System.out.println(uneBiere4) ;
+        uneBiere4.lireEtiquette();
+        
+        BouteilleBiere uneBiere5 = new BouteilleBiere("Cap dona", 7.0, "Cap Dona");
+        System.out.println(uneBiere5) ;
+        test=uneBiere5.Décapsuler();
+        System.out.println(uneBiere5) ;
+        uneBiere5.lireEtiquette();
+        
+        
 // TODO code application logic here
+
         
     }
 
