@@ -8,42 +8,44 @@
  */
 class Convertisseur {
     
-    int nbConversions;
+public int nbConversions;
 
     public Convertisseur() {
-
+        
         int nbConversions = 0;
     }
+   
     public String tostring() {
 
         return "nb de conversions" + nbConversions;
     
 
 }
-
-public double CelciusVersKelvin(double tempCelcius){
-    double tempKelvin;
-    tempKelvin = (double) (tempCelcius + 273.15);
-   
+// creation de la variable qui va transformer la temperature qui est en celcius en Kelvin
+public double CelciusVersKelvin(double tempC){
+    double tempK;
+    tempK = (double) (tempC + 273.15);
+// on ajoute 273.15 pour obtenir des degrés   
     nbConversions+=1;
     
-    return tempKelvin ;
+    return tempK ;
 }
         
-
-public double KelvinVersCelcius(double tempKelvin){
-    double tempCelcius;
+// creation de la variable qui va transformer la temperature qui est en Kelvin en Celcius
+public double KelvinVersCelcius(double tempK){
+    double tempC;
        
-    tempCelcius =(double)(tempKelvin - 273.15);
+    tempC =(double)(tempK - 273.15);
 nbConversions+=1;
-    return tempCelcius;
+    return tempC;
 }
-
+// creation de la variable qui va transformer la temperature qui est en celcius en Farenheit
 public double CelciusVersFarenheit(double tempCelcius){
     double tempFarenheit;
     
     tempFarenheit = (double) (tempCelcius * (9.0/5)+ 32); 
     nbConversions+=1;
+    // on ajoute 1 au nombre de conversion effectue depuis le debut 
         return tempFarenheit;
 }
 
