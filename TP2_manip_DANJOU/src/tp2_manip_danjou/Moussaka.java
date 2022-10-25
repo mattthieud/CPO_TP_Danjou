@@ -9,13 +9,15 @@ package tp2_manip_danjou;
  * @author Utilisateur
  */
 public class Moussaka {
+
     int nbCalories;
-    public Moussaka (int nb){
-        int nbCalories=nb;
+
+    public Moussaka(int nb) {
+        nbCalories = nb;
     }
+
     @Override
-    public String toString(){
-        return
-    String.valueOf(nbCalories);
+    public String toString() {
+        return String.valueOf(nbCalories);
     }
 }
