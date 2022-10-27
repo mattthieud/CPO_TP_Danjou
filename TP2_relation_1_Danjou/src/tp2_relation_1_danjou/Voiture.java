@@ -14,6 +14,7 @@ public class Voiture {
     String marque;
     int PuissanceCV;
     Personne Proprietaire;
+    Personne proprietaire;
 
     public Voiture(String unmodele, String unemarque, int unePuissanceCV) {
         modele = unmodele;
