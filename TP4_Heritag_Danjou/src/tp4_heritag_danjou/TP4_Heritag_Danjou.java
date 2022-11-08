@@ -4,7 +4,9 @@
  */
 package tp4_heritag_danjou;
 
+import Armes.*;
 import java.util.ArrayList;
+
 
 /**
  *
@@ -31,15 +33,21 @@ public class TP4_Heritag_Danjou {
     System.out.println(Baton2);
         
     
-    ArrayList <Arme> nom_Arme= new ArrayList <Arme>();
-    nom_Arme.add(Epée1);
-    nom_Arme.add(Epée2);
-    nom_Arme.add(Baton1);
-    nom_Arme.add(Baton2);
+    ArrayList <Arme> Narme= new ArrayList <Arme>();
+    Narme.add(Epée1);
+    Narme.add(Epée2);
+    Narme.add(Baton1);
+    Narme.add(Baton2);
+    int taille =Narme.size();
+    int longueur =taille-1;
+    for (int i=0; i<longueur;i++){
+    System.out.println(Narme.get(i)+",");
+    
+    }
+    System.out.println(Narme.get(taille-1));
     
     
     
     
-    
-    
+    }   
 }
