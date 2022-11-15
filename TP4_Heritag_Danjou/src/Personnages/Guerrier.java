@@ -9,11 +9,13 @@ package Personnages;
  * @author Utilisateur
  */
 public class Guerrier extends Personnage {
-   boolean cheval;
+   public static int nbGuerrier=0;
+    boolean cheval;
 
     public Guerrier(String unNom, int unniveau_vie,boolean confirm) {
         super(unNom, unniveau_vie);
         this.cheval = cheval;
+        nbGuerrier++;
     }
 
     @Override

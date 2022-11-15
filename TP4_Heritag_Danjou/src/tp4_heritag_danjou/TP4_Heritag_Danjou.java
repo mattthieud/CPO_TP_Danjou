@@ -8,6 +8,7 @@ import Armes.*;
 import Personnages.Guerrier;
 import Personnages.Magicien;
 import java.util.ArrayList;
+import Personnages.*;
 
 
 /**
@@ -28,12 +29,17 @@ public class TP4_Heritag_Danjou {
     Epée Epée2 = new Epée("Durandal",4,7);
         System.out.println(Epée2);
     
+    Epée Epée3 = new Epée("Or",8,7);
+        System.out.println(Epée3);
+    
     Baton Baton1 =new Baton("Chêne", 4, 5);
     System.out.println(Baton1);
     
     Baton Baton2 =new Baton("Charme", 5, 6);
     System.out.println(Baton2);
-        
+     
+    Baton Baton3 =new Baton("fer", 8, 5);
+    System.out.println(Baton3);
     
     ArrayList <Arme> Narme= new ArrayList <Arme>();
     Narme.add(Epée1);
@@ -58,10 +64,34 @@ public class TP4_Heritag_Danjou {
         System.out.println(Guerrier1);  
     Guerrier Guerrier2 = new Guerrier("Lannister",45, true);
         System.out.println(Guerrier2);  
+     
+    ArrayList <Personnage> Npersonnage= new ArrayList <Personnage>();
+    Npersonnage.add(Guerrier1);
+    Npersonnage.add(Guerrier2);
+    Npersonnage.add(Magicien1);
+    Npersonnage.add(Magicien2);
+    taille =Npersonnage.size();
+    longueur =taille-1;
+    for (int i=0; i<longueur;i++){
+    System.out.println(Npersonnage.get(i)+",");
     
+    }
+    System.out.println(Narme.get(taille-1));
     
-    }   
-    
+     
+Guerrier1.ajouterarme(Epée1);  
+Guerrier1.ajouterarme(Epée2);
+Guerrier1.ajouterarme(Baton3);
+Magicien1.ajouterarme(Baton1);
+Magicien1.ajouterarme(Baton2);
+Magicien1.ajouterarme(Epée2);
+
+Guerrier1.equiperarme("Excalibur");
+
+
+
+
+}
 }
 
 

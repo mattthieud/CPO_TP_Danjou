@@ -28,5 +28,9 @@ public void setAttaque(int attaque) {
         chaine_a_retourner = "l'arme " + nom +  "niveau d'attaque de " + niveau_attaque  ;   
  return chaine_a_retourner;
  }
+
+    public Object getNom() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
  
 }
