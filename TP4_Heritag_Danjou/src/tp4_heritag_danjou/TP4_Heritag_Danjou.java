@@ -5,6 +5,8 @@
 package tp4_heritag_danjou;
 
 import Armes.*;
+import Personnages.Guerrier;
+import Personnages.Magicien;
 import java.util.ArrayList;
 
 
@@ -46,8 +48,20 @@ public class TP4_Heritag_Danjou {
     }
     System.out.println(Narme.get(taille-1));
     
+    Magicien Magicien1 = new Magicien("Gandalf",300,true);
+        System.out.println(Magicien1);
+    Magicien Magicien2 = new Magicien("Garcimore",44,false);
+        System.out.println(Magicien2);
     
+        
+    Guerrier Guerrier1 = new Guerrier("Conan",78, false);
+        System.out.println(Guerrier1);  
+    Guerrier Guerrier2 = new Guerrier("Lannister",45, true);
+        System.out.println(Guerrier2);  
     
     
     }   
+    
 }
+
+

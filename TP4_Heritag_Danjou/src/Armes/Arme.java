@@ -11,10 +11,16 @@ package Armes;
 public class Arme {
     String  nom;
     int    niveau_attaque;
+    int attaque ;
 public Arme(String unNom, int unniveau_attaque) {
         nom = unNom;
         niveau_attaque = unniveau_attaque;
-      
+   
+}       
+public void setAttaque(int attaque) {
+        if (attaque > 0){
+            this.attaque= attaque;
+        }
     }
 @Override  
  public String toString() {
